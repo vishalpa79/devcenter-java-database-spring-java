@@ -37,6 +37,7 @@
     </dependencies>
 
     <build>
+    <finalName>demo</finalName>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -60,6 +61,10 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
         </plugins>
     </build>
 
