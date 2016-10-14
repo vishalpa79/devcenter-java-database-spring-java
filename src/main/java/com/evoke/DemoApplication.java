@@ -18,7 +18,7 @@ public class DemoApplication {
 	 @Bean
 		public BasicDataSource dataSource() throws URISyntaxException {
 		    URI dbUri = new URI(System.getenv("DATABASE_URL"));
-		
+		System.out.println("DATABASE_URL:::::"+ dbUri);
 		    String username = dbUri.getUserInfo().split(":")[0];
 		    String password = dbUri.getUserInfo().split(":")[1];
 		    String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + dbUri.getPath();
